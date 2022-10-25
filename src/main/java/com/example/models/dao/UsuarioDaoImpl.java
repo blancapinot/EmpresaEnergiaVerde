@@ -101,7 +101,7 @@ public class UsuarioDaoImpl implements IUsuarioDao {
 
     @Override
     public void delete(Long id){
-        String sql = "delete usuario where id = '" + id + "'";
+        String sql = "delete from usuario where id = " + id + "";
 
         try{
             connection = Conexion.getConnection();

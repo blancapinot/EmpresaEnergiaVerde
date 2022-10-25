@@ -58,7 +58,7 @@
             </td>
 
             <td>
-                <form action="EliminarUsuario" method="post">
+                <form action="eliminarUsuario" method="post">
                     <button title="Eliminar" type="submit" name="id" class="btn btn-primary" value="${usuario.getId()}">Eliminar</button>
                 </form>
             </td>
