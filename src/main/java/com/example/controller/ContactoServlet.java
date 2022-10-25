@@ -30,7 +30,7 @@ public class ContactoServlet extends HttpServlet {
             session.setAttribute("password", password);
             getServletContext().getRequestDispatcher("/views/contacto.jsp").forward(request, response);
         } else {
-            getServletContext().getRequestDispatcher("/views/login.jsp").forward(request, response);
+            getServletContext().getRequestDispatcher("/views/crearUsuario.jsp").forward(request, response);
         }
         //doGet(request, response);
     }

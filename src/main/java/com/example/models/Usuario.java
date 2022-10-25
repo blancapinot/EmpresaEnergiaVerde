@@ -2,28 +2,37 @@ package com.example.models;
 
 public class Usuario {
 
-    protected Long idUsuario;
+    protected Long id;
     protected String nombre;
     protected String apellido;
     protected String rut;
+    
+    protected String tipo;
 
-    public Usuario(long id_usuario, String nombre, String apellido, int rut) {
+    public Usuario() {
     }
 
-    public Usuario(Long idUsuario, String nombre, String apellido, String rut) {
-        this.idUsuario = idUsuario;
+    public Usuario(Long id, String nombre, String apellido, String rut, String tipo) {
+        this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.rut = rut;
-
+        this.tipo = tipo;
     }
 
-    public Long getIdUsuario() {
-        return idUsuario;
+    public Usuario(String nombre, String apellido, String rut, String tipo) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.rut = rut;
+        this.tipo = tipo;
     }
 
-    public void setIdUsuario(Long idUsuario) {
-        this.idUsuario = idUsuario;
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getNombre() {
@@ -50,4 +59,11 @@ public class Usuario {
         this.rut = rut;
     }
 
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
 }

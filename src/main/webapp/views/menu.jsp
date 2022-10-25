@@ -39,7 +39,11 @@
                     <a class="nav-link" href="contacto">contacto</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login">login</a>
+                    <a class="nav-link" href="crearUsuario">Crear usuario</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="listarUsuarios">Listar usuario</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
