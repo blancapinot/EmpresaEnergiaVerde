@@ -26,7 +26,7 @@
 <div style="background: black" class="container">
     <br/>
     <br/>
-    <%@include file="menu.jsp" %>
+    <jsp:include page="menu.jsp"></jsp:include>
 
 <br />
 <div class="container">
